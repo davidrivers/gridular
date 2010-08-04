@@ -1,0 +1,76 @@
+/* Center Grids by default */
+body {
+  text-align: center;
+}
+
+/* Grids of varying Unit Multipliers */
+.gr {
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+
+/* Clearfix for Grids */
+
+.gr:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+ 
+html[xmlns] .gr {
+  display: block;
+}
+ 
+* html .gr {
+  height: 1%;
+}
+
+/* Grids can take a Grid Margin class that does 2 things:
+ * 1) Shrink its Units to accommodate a margin around the Grid that does not expand the width of the Grid
+ * 2) Set Gutters for Units (margins for the Grid's Units) that are half the size of the Grid Margin, and shrink Unit widths in accommodation
+ * */
+
+/* The base grid margin is 2%, which is meant to be a reasonable margin for most web pages */
+.gr.gr-m {
+  margin: 4%;
+  width: 92%;
+}
+
+.gr.gr-m .gr-u {
+  margin: 1% 0;
+}
+
+/* Grids contain Units, which look like "columns" in the grid */
+.gr-u {
+  float: left;
+}
+
+/* First unit */
+.gr-u.first, .gr.gr-m .gr-u.first, .gr.gr-3.gr-m .gr-u.first {
+  margin-left: 0;
+}
+
+/* Grids can take a Unit Multiplier class (.gr.gr-3, .gr-4, .gr-5, etc.), which determines its quantity of Units */
+
+/* A Grid without a Unit Multiplier assumes only 2 Units */
+.gr .gr-u {
+  width: 50%;
+}
+
+.gr.gr-m .gr-u {
+  margin-left: 2%;
+  width: 49%;
+}
+
+.gr.gr-3 .gr-u {
+  width: 33.33333%;
+}
+
+.gr.gr-3.gr-m .gr-u {
+  margin-left: 2%;
+  width: 32%;
+}
