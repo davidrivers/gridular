@@ -29,14 +29,14 @@ Some of these differences are merely features that I do not wish to support. How
 
 ## Gridular Vocabulary (subject to change)
 
-*"Tentative" features are not yet implemented.*
+*"Tentative" features are not yet supported.*
 
 <dl>
   <dt>Grid</dt>
   <dd>A `.gr` that encapsulates *units*, which can be seen as "columns". Without constituent units, a `.gr` is useful as a clearfix.</dd>
   <dt>Grid Container (Tentative)</dt>
   <dd>A `.gr-c` nested within a `.gr` for the purposes of accommodating user-defined *grid styles* that cannot be accomplished with a support *grid style coefficient*</dd>
-  <dt>Grid Style (Only `.gr-m` implemented yet)</dt>
+  <dt>Grid Style (Only `.gr-m` supported yet)</dt>
   <dd>A class for spatial styles that affects a *grid* and all of its *units*: `.gr-m`, `.gr-p`, and `.gr-b`</dd>
   <dt>Grid Style Coefficient (Tentative)</dt>
   <dd>A class that can be added to a `.gr` with a *grid style* to either increase or decrease the units of the *grid*s *spatial styles*</dd>
