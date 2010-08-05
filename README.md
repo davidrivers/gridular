@@ -1,6 +1,6 @@
 # Gridular CSS
 
-"Making and Breaking the Grid", by Timothy Samara, really inspired me to explore grid-based Web design. While something I think most Web designers so instinctively, grids-based CSS libraries are a relatively young innovation. Furthermore, in my own research I have found only one library that is relatively modular, and not based on pixels: **YUI Grids**.  Many of Gridular's concepts are derived directly from YUI Grids. However, YUI Grids has both features that I do not need, and shortcomings that I would like to address, which I extrapolate below.
+"Making and Breaking the Grid", by Timothy Samara, really inspired me to explore grid-based Web design. While grid-based Web design seems to be second nature, grids-based CSS libraries are a relatively young innovation. Furthermore, in my own research I have found only one library that is relatively modular, and not based on pixels: **YUI Grids**.  Many of Gridular's concepts are derived directly from YUI Grids. However, YUI Grids has both features that I do not need, and shortcomings that I would like to address, which I extrapolate below.
 
 ## Design Principles
 
@@ -42,8 +42,8 @@ Some of these differences are merely features that I do not wish to support. How
   <dd>A class that can be added to a `.gr` with a *grid style* to either increase or decrease the units of the *grid*s *spatial styles*</dd>
   <dt>Unit</dt>
   <dd>A constituent `.gr-u` of a *grid*</dd>
-  <dt>Unit Factor</dt>
-  <dd>A class that can be added to a `.gr` to specify its quantity of *units*: `.gr-3`, etc. (Note that a `.gr` without a *unit multiplier* will create a *grid* with 2 *units*)
+  <dt>Unit Factor (Only `.gr-3` supported yet)</dt>
+  <dd>A class that can be added to a `.gr` to specify its quantity of *units*: `.gr-3`, `.gr-5`, etc. (Note that a `.gr` without a *unit factor* will create a *grid* with 2 *units*)
   <dt>Fixed Grid (Tentative)</dt>
   <dd>A `.gr-f` is a *grid* that is fixed-positioned to a side of the viewport</dd>
 </dl>
