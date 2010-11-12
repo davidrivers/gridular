@@ -7,7 +7,7 @@
 * Simple enough to remain legible and have a low learning curve
 * Few or zero browser hacks
 * Compatible with MSIE 6+, Opera, Safari, Firefox, Chrome, etc.
-* .gr is a [pseudo-namespaces](http://meiert.com/en/blog/20070321/css-practice-pseudo-namespaces-in-complex-projects/)
+* .gr is a [pseudo-namespace](http://meiert.com/en/blog/20070321/css-practice-pseudo-namespaces-in-complex-projects/)
 * Allow for nestable and potentially complex grid layouts
 * Rely on % and em for units, so that layouts are be scalable and code is modular and concise
 
@@ -57,3 +57,4 @@ The vocabulary (and corresponding class selectors) are still being assessed, and
 * Decide on optimal margin/gutter algebra
 * Decide how to handle collapsing margins of adjacent grids
 * Gridular.css currently relies on the Meyer Reset CSS
+* Consider [this issue](http://doctype.com/problemyui-grids-large-font-size-ie67) of YUI Grids's usage of ems/percentages
