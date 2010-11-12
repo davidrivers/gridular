@@ -6,7 +6,7 @@
 
 * Simple enough to remain legible and have a low learning curve
 * Few or zero browser hacks
-* Compatible with MSIE 6+, Opera, Safari, Firefox, Chrome, etc.
+* Compatible with [YUI A-Grade browsers](http://developer.yahoo.com/yui/articles/gbs/), except MSIE6 (It's not worth the maintenance of hacks with its market share ~5%)
 * .gr is a [pseudo-namespace](http://meiert.com/en/blog/20070321/css-practice-pseudo-namespaces-in-complex-projects/)
 * Allow for nestable and potentially complex grid layouts
 * Rely on % and em for units, so that layouts are be scalable and code is modular and concise
