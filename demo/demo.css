@@ -1,7 +1,123 @@
-.gr, .gr3 {
+.add:hover, .remove:hover, code:hover {
+  opacity: 1;
+}
+
+.add, .remove {
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-family: monospace;
+  font-size: 150%;
+  height: 1em;
+  opacity: 0.5;
+  text-align: center;
+  width: 1em;
+}
+
+.add {
+  background: #363;
+}
+
+body {
+  font-family: Optima, Verdana, sans-serif;
+}
+
+body > .context {
+  display: block;
+}
+
+.change-class {
+  float: right;
+  margin-left: 1em;
+}
+
+code {
+  background: #567;
+  border: 2px solid #012;
+  font-family: monospace;
+  font-size: 150%;
+  font-weight: bold;
+  opacity: 0.9;
+  padding: 5px;
+}
+
+.context {
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+}
+
+.edit {
+  color: #def;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.gr {
+  position: relative;
+}
+
+.gr > .context {
+  right: 0;
+}
+
+.gr .context {
+  display: none;
+}
+
+.gr:hover {
   background: #e6e6e6;
 }
 
-.gr-u {
-  background: #ccc;
+.gr:hover > .context {
+  display: block;
+}
+
+.gr:hover h2 .context, .u:hover .context {
+  display: block;
+}
+
+.gr .u .context {
+  bottom: 0;
+  right: 0;
+}
+
+h1, p {
+  margin: 1% 0;
+}
+
+h1 {
+  font-size: 150%;
+}
+
+.note {
+  color: #999;
+  font-style: italic;
+}
+
+.note code {
+  background: inherit;
+  border: none;
+  color: inherit;
+  padding: inherit;
+}
+
+.remove {
+  background: #933;
+}
+
+.remove:hover {
+  opacity: 1;
+}
+
+.u {
+  position: relative;
+}
+
+.u:hover {
+  background: #def;
+}
+
+#wrapper {
+  position: relative;
 }

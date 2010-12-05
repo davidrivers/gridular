@@ -54,7 +54,7 @@ The vocabulary (and corresponding class selectors) are still being assessed, and
 
 ## Known Issues/TODO
 
-* Decide on optimal margin/gutter algebra
 * Decide how to handle collapsing margins of adjacent grids
-* Gridular.css currently relies on the Meyer Reset CSS
+* Finalize basic terms and API
+* Assess dependency on Eric Meyer's reset CSS
 * Consider [this issue](http://doctype.com/problemyui-grids-large-font-size-ie67) of YUI Grids's usage of ems/percentages

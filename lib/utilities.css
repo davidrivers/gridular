@@ -1,0 +1,21 @@
+@import url("hacks.css");
+
+/* Clearfix for Grids */
+/* TODO Is there a less hacky clearfix that doesn't need MSIE6 support? */ 
+
+.gr:after, .gr-3:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+ 
+html[xmlns] .gr, html[xmlns] .gr-3 {
+  display: block;
+}
+ 
+* html .gr, * html .gr-3 {
+  height: 1%;
+}
